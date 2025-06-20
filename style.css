@@ -3,9 +3,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
+   }
+.gradient-text {
+            background: linear-gradient(90deg, #8b5cf6, #ec4899, #2dd4bf);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 300% 300%;
+            animation: text-gradient 5s ease infinite;
+        }
+        .skill-card {
+            transition: all 0.3s ease;
+            perspective: 1000px;
+        }
+        .skill-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(139, 92, 246, 0.2);
+        }
+        .skill-card:hover .skill-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .skill-icon {
+            transition: all 0.4s ease;
+        }
+        .progress-bar-container {
+            height: 6px;
+            border-radius: 3px;
+        }
+        .progress-bar {
+            height: 100%;
+            border-radius: 3px;
+            animation: progress-bar 1.5s ease-out forwards;
+        }
+        .category-tab {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .category-tab.active {
+            background: linear-gradient(135deg, #8b5cf6, #ec4899);
+            color: white;
+            box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.3);
+        }
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 1.5rem;
+        }
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+        }
 body {
+     cursor: url('./cursor/Bee%20-%20Normal%20select.ani');
+
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #fdf2ff 0%, #f0e6ff 100%);
     color: #333;

@@ -239,136 +239,231 @@
     </section>
 
     
-    <!-- Skills Section -->
-    <section id="skills" class=" py-20">
-        <div class="container  mx-auto px-4">
+<!-- Skills Section -->
+    <section id="skills" class="py-20 w-full ">
+        <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="section-title text-3xl md:text-4xl font-bold mb-4 inline-block">My Skills</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">My Skills</span>
+                </h2>
+                <p class="text-gray-700 max-w-2xl mx-auto mt-6">
+                    Technologies I've mastered and continue to explore
+                </p>
             </div>
             
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <!-- Skill Categories -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <div class="category-tab active px-6 py-2 rounded-full bg-white shadow-md" data-category="all">
+                    All Skills
+                </div>
+                <div class="category-tab px-6 py-2 rounded-full bg-white shadow-md" data-category="frontend">
+                    Frontend
+                </div>
+                <div class="category-tab px-6 py-2 rounded-full bg-white shadow-md" data-category="tools">
+                    Tools
+                </div>
+                <div class="category-tab px-6 py-2 rounded-full bg-white shadow-md" data-category="soft">
+                    Soft Skills
+                </div>
+            </div>
+            
+            <!-- Floating elements -->
+            <div class="floating-element absolute left-10 top-1/4 text-4xl text-purple-400 opacity-30">✦</div>
+            <div class="floating-element absolute right-20 top-1/3 text-4xl text-pink-400 opacity-30">✦</div>
+            <div class="floating-element absolute left-1/3 bottom-1/4 text-4xl text-teal-400 opacity-30">✦</div>
+            
+            <!-- Skills Grid -->
+            <div class="skill-grid">
                 <!-- Frontend Skills -->
-                <div class="skill-badge card-gradient p-6 rounded-xl shadow-md flex flex-col items-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fab fa-html5 text-3xl text-orange-500"></i>
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md flex flex-col items-center skill-item" data-category="frontend">
+                    <div class="w-20 h-20 rounded-2xl bg-purple-100 flex items-center justify-center mb-4">
+                        <i class="fab fa-html5 text-4xl text-orange-500 skill-icon"></i>
                     </div>
-                    <h3 class="font-bold mb-2">HTML5</h3>
+                    <h3 class="font-bold text-lg mb-2">HTML5</h3>
+                    <div class="w-full mt-3">
+                        <div class="text-xs text-gray-500 mb-1 text-right">95%</div>
+                        <div class="progress-bar-container bg-gray-200 rounded-full">
+                            <div class="progress-bar bg-orange-500" style="width: 95%"></div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="skill-badge card-gradient p-6 rounded-xl shadow-md flex flex-col items-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fab fa-css3-alt text-3xl text-blue-500"></i>
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md flex flex-col items-center skill-item" data-category="frontend">
+                    <div class="w-20 h-20 rounded-2xl bg-purple-100 flex items-center justify-center mb-4">
+                        <i class="fab fa-css3-alt text-4xl text-blue-500 skill-icon"></i>
                     </div>
-                    <h3 class="font-bold mb-2">CSS3</h3>
+                    <h3 class="font-bold text-lg mb-2">CSS3</h3>
+                    <div class="w-full mt-3">
+                        <div class="text-xs text-gray-500 mb-1 text-right">90%</div>
+                        <div class="progress-bar-container bg-gray-200 rounded-full">
+                            <div class="progress-bar bg-blue-500" style="width: 90%"></div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="skill-badge card-gradient p-6 rounded-xl shadow-md flex flex-col items-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fab fa-js text-3xl text-yellow-500"></i>
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md flex flex-col items-center skill-item" data-category="frontend">
+                    <div class="w-20 h-20 rounded-2xl bg-purple-100 flex items-center justify-center mb-4">
+                        <i class="fab fa-js text-4xl text-yellow-500 skill-icon"></i>
                     </div>
-                    <h3 class="font-bold mb-2">JavaScript</h3>
+                    <h3 class="font-bold text-lg mb-2">JavaScript</h3>
+                    <div class="w-full mt-3">
+                        <div class="text-xs text-gray-500 mb-1 text-right">85%</div>
+                        <div class="progress-bar-container bg-gray-200 rounded-full">
+                            <div class="progress-bar bg-yellow-500" style="width: 85%"></div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="skill-badge card-gradient p-6 rounded-xl shadow-md flex flex-col items-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-code text-3xl text-blue-400"></i>
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md flex flex-col items-center skill-item" data-category="frontend">
+                    <div class="w-20 h-20 rounded-2xl bg-purple-100 flex items-center justify-center mb-4">
+                        <i class="fas fa-code text-4xl text-blue-400 skill-icon"></i>
                     </div>
-                    <h3 class="font-bold mb-2">TypeScript</h3>
+                    <h3 class="font-bold text-lg mb-2">TypeScript</h3>
+                    <div class="w-full mt-3">
+                        <div class="text-xs text-gray-500 mb-1 text-right">80%</div>
+                        <div class="progress-bar-container bg-gray-200 rounded-full">
+                            <div class="progress-bar bg-blue-400" style="width: 80%"></div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="skill-badge card-gradient p-6 rounded-xl shadow-md flex flex-col items-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fab fa-react text-3xl text-blue-400"></i>
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md flex flex-col items-center skill-item" data-category="frontend">
+                    <div class="w-20 h-20 rounded-2xl bg-purple-100 flex items-center justify-center mb-4">
+                        <i class="fab fa-react text-4xl text-blue-400 skill-icon"></i>
                     </div>
-                    <h3 class="font-bold mb-2">React</h3>
+                    <h3 class="font-bold text-lg mb-2">React</h3>
+                    <div class="w-full mt-3">
+                        <div class="text-xs text-gray-500 mb-1 text-right">88%</div>
+                        <div class="progress-bar-container bg-gray-200 rounded-full">
+                            <div class="progress-bar bg-blue-400" style="width: 88%"></div>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- Frameworks -->
-                <div class="skill-badge card-gradient p-6 rounded-xl shadow-md flex flex-col items-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fab fa-bootstrap text-3xl text-purple-500"></i>
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md flex flex-col items-center skill-item" data-category="frontend">
+                    <div class="w-20 h-20 rounded-2xl bg-purple-100 flex items-center justify-center mb-4">
+                        <i class="fab fa-bootstrap text-4xl text-purple-500 skill-icon"></i>
                     </div>
-                    <h3 class="font-bold mb-2">Bootstrap</h3>
+                    <h3 class="font-bold text-lg mb-2">Bootstrap</h3>
+                    <div class="w-full mt-3">
+                        <div class="text-xs text-gray-500 mb-1 text-right">75%</div>
+                        <div class="progress-bar-container bg-gray-200 rounded-full">
+                            <div class="progress-bar bg-purple-500" style="width: 75%"></div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="skill-badge card-gradient p-6 rounded-xl shadow-md flex flex-col items-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-wind text-3xl text-teal-400"></i>
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md flex flex-col items-center skill-item" data-category="frontend">
+                    <div class="w-20 h-20 rounded-2xl bg-purple-100 flex items-center justify-center mb-4">
+                        <i class="fas fa-wind text-4xl text-teal-400 skill-icon"></i>
                     </div>
-                    <h3 class="font-bold mb-2">Tailwind CSS</h3>
+                    <h3 class="font-bold text-lg mb-2">Tailwind CSS</h3>
+                    <div class="w-full mt-3">
+                        <div class="text-xs text-gray-500 mb-1 text-right">92%</div>
+                        <div class="progress-bar-container bg-gray-200 rounded-full">
+                            <div class="progress-bar bg-teal-400" style="width: 92%"></div>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- Tools -->
-                <div class="skill-badge card-gradient p-6 rounded-xl shadow-md flex flex-col items-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fab fa-git-alt text-3xl text-orange-600"></i>
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md flex flex-col items-center skill-item" data-category="tools">
+                    <div class="w-20 h-20 rounded-2xl bg-purple-100 flex items-center justify-center mb-4">
+                        <i class="fab fa-git-alt text-4xl text-orange-600 skill-icon"></i>
                     </div>
-                    <h3 class="font-bold mb-2">Git</h3>
+                    <h3 class="font-bold text-lg mb-2">Git</h3>
+                    <div class="w-full mt-3">
+                        <div class="text-xs text-gray-500 mb-1 text-right">85%</div>
+                        <div class="progress-bar-container bg-gray-200 rounded-full">
+                            <div class="progress-bar bg-orange-600" style="width: 85%"></div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="skill-badge card-gradient p-6 rounded-xl shadow-md flex flex-col items-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fab fa-figma text-3xl text-purple-500"></i>
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md flex flex-col items-center skill-item" data-category="tools">
+                    <div class="w-20 h-20 rounded-2xl bg-purple-100 flex items-center justify-center mb-4">
+                        <i class="fab fa-figma text-4xl text-purple-500 skill-icon"></i>
                     </div>
-                    <h3 class="font-bold mb-2">Figma</h3>
+                    <h3 class="font-bold text-lg mb-2">Figma</h3>
+                    <div class="w-full mt-3">
+                        <div class="text-xs text-gray-500 mb-1 text-right">78%</div>
+                        <div class="progress-bar-container bg-gray-200 rounded-full">
+                            <div class="progress-bar bg-purple-500" style="width: 78%"></div>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- Soft Skills -->
-                <div class="skill-badge card-gradient p-6 rounded-xl shadow-md flex flex-col items-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-users text-3xl text-blue-400"></i>
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md flex flex-col items-center skill-item" data-category="soft">
+                    <div class="w-20 h-20 rounded-2xl bg-purple-100 flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-4xl text-blue-400 skill-icon"></i>
                     </div>
-                    <h3 class="font-bold mb-2">Team Collaboration</h3>
+                    <h3 class="font-bold text-lg mb-2">Team Collaboration</h3>
+                    <div class="w-full mt-3">
+                        <div class="text-xs text-gray-500 mb-1 text-right">90%</div>
+                        <div class="progress-bar-container bg-gray-200 rounded-full">
+                            <div class="progress-bar bg-blue-400" style="width: 90%"></div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="skill-badge card-gradient p-6 rounded-xl shadow-md flex flex-col items-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-bug text-3xl text-green-500"></i>
+                <div class="skill-card bg-white rounded-xl p-6 shadow-md flex flex-col items-center skill-item" data-category="soft">
+                    <div class="w-20 h-20 rounded-2xl bg-purple-100 flex items-center justify-center mb-4">
+                        <i class="fas fa-bug text-4xl text-green-500 skill-icon"></i>
                     </div>
-                    <h3 class="font-bold mb-2">Debugging</h3>
+                    <h3 class="font-bold text-lg mb-2">Debugging</h3>
+                    <div class="w-full mt-3">
+                        <div class="text-xs text-gray-500 mb-1 text-right">87%</div>
+                        <div class="progress-bar-container bg-gray-200 rounded-full">
+                            <div class="progress-bar bg-green-500" style="width: 87%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gradient-to-r from-pink-300 via-purple-300 to-orange-300">
+    <section id="projects" class="py-20 w-full ">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="section-title text-3xl md:text-4xl font-bold mb-4 inline-block">My Projects</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">My Projects</span>
+                </h2>
                 <p class="text-gray-700 max-w-2xl mx-auto mt-6">
-                    Showcasing my work and technical abilities
+                    Click on any project to view detailed information
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
-                <div class="project-card card-gradient rounded-xl overflow-hidden shadow-lg">
-                    <div class="h-48 bg-gradient-to-r from-purple-400 to-pink-400 relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <i class="fas fa-book-open text-white text-6xl"></i>
-                        </div>
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="openModal(1)">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="Moonvale University Magazine" 
+                             class="w-full h-full object-cover project-image">
                         <div class="absolute top-4 right-4 bg-white text-purple-600 px-3 py-1 rounded-full text-sm font-bold">React</div>
                     </div>
-                    <div class="p-6 bg-[#fff]/50 backdrop-blur-md">
+                    <div class="p-6">
                         <h3 class="font-bold text-xl mb-2">Moonvale University Magazine</h3>
                         <p class="text-gray-700 mb-4">
                             Dynamic frontend for article management built with React, TypeScript and Tailwind CSS.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">TypeScript</span>
-                            <span class="project-tag">Tailwind</span>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-xs">React</span>
+                            <span class="tech-tag bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-xs">TypeScript</span>
+                            <span class="tech-tag bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-xs">Tailwind</span>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Project 2 -->
-                <div class="project-card card-gradient rounded-xl overflow-hidden shadow-lg">
-                    <div class="h-48 bg-gradient-to-r from-blue-400 to-teal-400 relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <i class="fas fa-window-restore text-white text-6xl"></i>
-                        </div>
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="openModal(2)">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1178&q=80" 
+                             alt="Bezie OS" 
+                             class="w-full h-full object-cover project-image">
                         <div class="absolute top-4 right-4 bg-white text-blue-600 px-3 py-1 rounded-full text-sm font-bold">HTML/CSS</div>
                     </div>
                     <div class="p-6">
@@ -376,21 +471,21 @@
                         <p class="text-gray-700 mb-4">
                             Full-stack educational app with retro Windows 98 UI using HTML, CSS, JS, Tailwind and PHP.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="project-tag">HTML</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">Tailwind</span>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">HTML</span>
+                            <span class="tech-tag bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">CSS</span>
+                            <span class="tech-tag bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">JavaScript</span>
+                            <span class="tech-tag bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs">Tailwind</span>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Project 3 -->
-                <div class="project-card card-gradient rounded-xl overflow-hidden shadow-lg">
-                    <div class="h-48 bg-gradient-to-r from-pink-400 to-purple-600 relative overflow-hidden">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <i class="fas fa-campground text-white text-6xl"></i>
-                        </div>
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer" onclick="openModal(3)">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="Retail Camping Co." 
+                             class="w-full h-full object-cover project-image">
                         <div class="absolute top-4 right-4 bg-white text-pink-600 px-3 py-1 rounded-full text-sm font-bold">HTML/CSS</div>
                     </div>
                     <div class="p-6">
@@ -398,16 +493,66 @@
                         <p class="text-gray-700 mb-4">
                             Responsive e-commerce layout focused on camping gear with Vanilla HTML/CSS.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="project-tag">HTML</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">Responsive</span>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-tag bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-xs">HTML</span>
+                            <span class="tech-tag bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-xs">CSS</span>
+                            <span class="tech-tag bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-xs">Responsive</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Project Modals -->
+    <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+        <div class="modal-overlay absolute inset-0" onclick="closeModal()"></div>
+        
+        <div id="modal-content" class="bg-white rounded-2xl overflow-hidden shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative z-10 animate-modalIn">
+            <!-- Close Button -->
+            <button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-purple-600 text-white flex items-center justify-center hover:bg-purple-700 transition" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <!-- Modal Header with Image -->
+            <div id="modal-header" class="h-64 md:h-80 relative overflow-hidden">
+                <img id="modal-image" src="" alt="Project" class="w-full h-full object-cover">
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="p-6 md:p-8">
+                <h2 id="modal-title" class="text-2xl md:text-3xl font-bold mb-4"></h2>
+                <p id="modal-description" class="text-gray-700 mb-6"></p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-purple-600 mb-3">Technologies Used</h3>
+                        <div id="modal-tech" class="flex flex-wrap gap-2"></div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-purple-600 mb-3">Project Details</h3>
+                        <ul id="modal-details" class="space-y-2"></ul>
+                    </div>
+                </div>
+                
+                <div id="modal-challenges" class="mb-8 p-4 bg-purple-50 rounded-lg border border-purple-100">
+                    <h3 class="text-lg font-semibold text-purple-600 mb-2">Key Challenges</h3>
+                    <p id="challenges-text"></p>
+                </div>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a id="live-link" href="#" target="_blank" class="px-6 py-3 bg-purple-600 text-white rounded-lg flex items-center gap-2 hover:bg-purple-700 transition">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Live Project
+                    </a>
+                    <a id="source-link" href="#" target="_blank" class="px-6 py-3 bg-white text-purple-600 border border-purple-200 rounded-lg flex items-center gap-2 hover:bg-purple-50 transition">
+                        <i class="fab fa-github"></i>
+                        Source Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Education Section -->
     <section id="education" class="py-20">
@@ -614,12 +759,168 @@
             </div>
             
             <div class="border-t border-gray-200 mt-8 pt-8 text-center text-sm text-gray-600">
-                <p>&copy; 2023 Yunn Thu Thu (Bebee). All rights reserved.</p>
+                <p>&copy; 2025 Yunn Thu Thu (Bebee). All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
+           // Skill category filtering
+        const categoryTabs = document.querySelectorAll('.category-tab');
+        const skillItems = document.querySelectorAll('.skill-item');
+        
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Update active tab
+                categoryTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                const category = tab.getAttribute('data-category');
+                
+                // Filter skills
+                skillItems.forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+        
+        // Animate skills on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-progress-bar');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        document.querySelectorAll('.progress-bar').forEach(bar => {
+            observer.observe(bar);
+        });
+          // Project data
+        const projects = {
+            1: {
+                title: "Moonvale University Magazine",
+                image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                description: "Dynamic frontend for article management built with React, TypeScript and Tailwind CSS. This platform allows students and faculty to publish articles, manage content, and engage with the university community.",
+                tech: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express'],
+                details: [
+                    "Role: Frontend Developer",
+                    "Duration: 3 months",
+                    "Team: 4 developers, 2 designers",
+                    "Status: Live and actively maintained"
+                ],
+                challenges: "Implementing real-time updates and user permissions was challenging. We solved this by creating a custom WebSocket integration and a role-based access system.",
+                liveLink: "#",
+                sourceLink: "#"
+            },
+            2: {
+                title: "Bezie OS (Kids' Learning App)",
+                image: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1178&q=80",
+                description: "Full-stack educational app with retro Windows 98 UI using HTML, CSS, JS, Tailwind and PHP. Designed for children aged 5-10 to learn math, science, and language arts in a fun, nostalgic environment.",
+                tech: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'Tailwind CSS'],
+                details: [
+                    "Role: Full-stack Developer",
+                    "Duration: 4 months",
+                    "Team: 3 developers, 1 designer",
+                    "Users: 5,000+ active monthly users"
+                ],
+                challenges: "Recreating the Windows 98 UI with modern web technologies required careful attention to detail. We implemented a custom CSS framework to achieve the authentic look and feel.",
+                liveLink: "#",
+                sourceLink: "#"
+            },
+            3: {
+                title: "Retail Camping Co.",
+                image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                description: "Responsive e-commerce layout focused on camping gear with Vanilla HTML/CSS. Features intuitive navigation, product filtering, and a seamless checkout process optimized for outdoor enthusiasts.",
+                tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
+                details: [
+                    "Role: Frontend Developer",
+                    "Duration: 2 months",
+                    "Team: Solo project",
+                    "Performance: 98% Lighthouse score"
+                ],
+                challenges: "Creating a responsive design that works on all devices was complex. I used mobile-first design principles and extensive testing to ensure perfect display on all screen sizes.",
+                liveLink: "#",
+                sourceLink: "#"
+            }
+        };
+        
+        // DOM elements
+        const modal = document.getElementById('project-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalImage = document.getElementById('modal-image');
+        const modalDescription = document.getElementById('modal-description');
+        const modalTech = document.getElementById('modal-tech');
+        const modalDetails = document.getElementById('modal-details');
+        const challengesText = document.getElementById('challenges-text');
+        const liveLink = document.getElementById('live-link');
+        const sourceLink = document.getElementById('source-link');
+        
+        // Function to open modal
+        function openModal(projectId) {
+            const project = projects[projectId];
+            
+            // Update modal content
+            modalTitle.textContent = project.title;
+            modalImage.src = project.image;
+            modalImage.alt = project.title;
+            modalDescription.textContent = project.description;
+            challengesText.textContent = project.challenges;
+            liveLink.href = project.liveLink;
+            sourceLink.href = project.sourceLink;
+            
+            // Update technologies
+            modalTech.innerHTML = '';
+            project.tech.forEach(tech => {
+                const tag = document.createElement('span');
+                tag.className = 'tech-tag bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm';
+                tag.textContent = tech;
+                modalTech.appendChild(tag);
+            });
+            
+            // Update details
+            modalDetails.innerHTML = '';
+            project.details.forEach(detail => {
+                const li = document.createElement('li');
+                li.className = 'flex items-start';
+                li.innerHTML = `
+                    <span class="text-purple-500 mr-2">•</span>
+                    <span>${detail}</span>
+                `;
+                modalDetails.appendChild(li);
+            });
+            
+            // Set header background based on project
+            const header = document.getElementById('modal-header');
+            if (projectId == 1) {
+                header.className = 'h-64 md:h-80 relative overflow-hidden bg-gradient-to-r from-purple-400 to-pink-400';
+            } else if (projectId == 2) {
+                header.className = 'h-64 md:h-80 relative overflow-hidden bg-gradient-to-r from-blue-400 to-teal-400';
+            } else {
+                header.className = 'h-64 md:h-80 relative overflow-hidden bg-gradient-to-r from-pink-400 to-purple-600';
+            }
+            
+            // Show modal
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // Function to close modal
+        function closeModal() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal with ESC key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu');
         const mobileMenu = document.getElementById('mobile-nav');
