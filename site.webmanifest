@@ -1,0 +1,25 @@
+{
+  "name": "Bebee Portfolio",
+  "short_name": "Bebee",
+  "description": "Portfolio of Yunn Thu Thu (Bebee), Frontend Developer & UI Artist",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdf8ff",
+ 
+  "categories": ["portfolio", "web development", "frontend"],
+  "orientation": "portrait",
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshot2.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}
