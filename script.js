@@ -38,48 +38,48 @@
         const projects = {
             1: {
                 title: "Moonvale University Magazine",
-                image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                image: "./images/mv.png",
                 description: "Dynamic frontend for article management built with React, TypeScript and Tailwind CSS. This platform allows students and faculty to publish articles, manage content, and engage with the university community.",
-                tech: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express'],
+                tech: ['React', 'TypeScript', 'Tailwind CSS', 'Laravel'],
                 details: [
-                    "Role: Frontend Developer",
+                    "Role:  Frontend Developer",
                     "Duration: 3 months",
-                    "Team: 4 developers, 2 designers",
-                    "Status: Live and actively maintained"
+                    "Team: 3 developers, 1 designers, 1 database-admin, 4 testers",
+                    "Status: submitted for review"
                 ],
-                challenges: "Implementing real-time updates and user permissions was challenging. We solved this by creating a custom WebSocket integration and a role-based access system.",
+                challenges: "Implementing real-time login and user permissions was challenging. We solved this by creating a custom plugin integration and a role-based access control system for each users.",
                 liveLink: "#",
-                sourceLink: "#"
+                sourceLink: "https://github.com/MoonvaleUniversity/MagazineContributionFrontend"
             },
             2: {
                 title: "Bezie OS (Kids' Learning App)",
-                image: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1178&q=80",
+                image: "./images/image.png",
                 description: "Full-stack educational app with retro Windows 98 UI using HTML, CSS, JS, Tailwind and PHP. Designed for children aged 5-10 to learn math, science, and language arts in a fun, nostalgic environment.",
                 tech: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'Tailwind CSS'],
                 details: [
                     "Role: Full-stack Developer",
                     "Duration: 4 months",
-                    "Team: 3 developers, 1 designer",
-                    "Users: 5,000+ active monthly users"
+                    "Team: 1 developer"
+                   
                 ],
                 challenges: "Recreating the Windows 98 UI with modern web technologies required careful attention to detail. We implemented a custom CSS framework to achieve the authentic look and feel.",
                 liveLink: "#",
-                sourceLink: "#"
+                sourceLink: "https://github.com/yunn-bebee/bezie-os"
             },
             3: {
-                title: "Retail Camping Co.",
-                image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                title: "Bee Camp.",
+                image: "./images/beecamp.png",
                 description: "Responsive e-commerce layout focused on camping gear with Vanilla HTML/CSS. Features intuitive navigation, product filtering, and a seamless checkout process optimized for outdoor enthusiasts.",
-                tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
+                tech: ['HTML5', 'CSS3', 'Responsive Design'],
                 details: [
                     "Role: Frontend Developer",
-                    "Duration: 2 months",
+                    "Duration: 1 months",
                     "Team: Solo project",
-                    "Performance: 98% Lighthouse score"
+                    "Marks: 80/100"
                 ],
                 challenges: "Creating a responsive design that works on all devices was complex. I used mobile-first design principles and extensive testing to ensure perfect display on all screen sizes.",
                 liveLink: "#",
-                sourceLink: "#"
+                sourceLink: "https://github.com/yunn-bebee/Bee_camp"
             }
         };
         
